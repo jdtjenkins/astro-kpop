@@ -1,5 +1,9 @@
 ---
+import { Image } from 'astro:assets';
 
+import '../styles/styles.css'
+
+import Image1 from '../images/1.jpg'
 ---
 
 <html lang="en">
@@ -8,9 +12,23 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Astro 💖 아스트로</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<div class="h-[100svh] overflow-clip relative">
+			<Image src={Image1} alt="astro-1" id="image1" class="absolute top-0 left-0 h-full w-full max-w-full max-h-full object-cover" />
+			<div class="absolute top-0 left-0 z-10 w-full h-full bg-gradient-to-br from-slate-950 to-transparent"></div>
+			<div class="absolute z-20 h-full w-full top-0 left-1/2 -translate-x-1/2 p-8">
+				<div class="heading absolute top-12 right-12 md:right-24 flex flex-col font-display text-8xl text-slate-950 text-shadow">
+					<span class="block">아</span>
+					<span class="block">스</span>
+					<span class="block">트</span>
+					<span class="block">로</span>
+				</div>
+				<div class="about absolute bottom-12 left-0 md:left-12 md:right-24 px-8 md:p-0 flex flex-col font-body text-3xl text-slate-100 text-shadow">
+					<p>ASTRO를 위해 사랑으로 만들었습니다!</p>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

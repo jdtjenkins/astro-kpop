@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Do+Hyeon&family=Moirai+One&display=swap');
+
+.font-display {
+    font-family: 'Moirai One';
+}
+
+.font-body {
+    font-family: 'Do Hyeon';
+}
+
+.text-shadow {
+    text-shadow: rgba(0,0,0,0.5);
+}
